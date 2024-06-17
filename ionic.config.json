@@ -1,0 +1,8 @@
+{
+  "name": "One Punch man",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "403d6652"
+}
