@@ -11,7 +11,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp } from 'ionicons/icons';
+import { homeSharp, homeOutline, peopleSharp, peopleOutline, filmSharp, filmOutline, informationCircleSharp, informationCircleOutline, imageSharp, imageOutline, readerSharp, readerOutline } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -23,44 +23,42 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Inbox',
-    url: '/folder/Inbox',
-    iosIcon: mailOutline,
-    mdIcon: mailSharp
+    title: 'Portada',
+    url: '/portada',
+    iosIcon: homeOutline,
+    mdIcon: homeSharp
   },
   {
-    title: 'Outbox',
-    url: '/folder/Outbox',
-    iosIcon: paperPlaneOutline,
-    mdIcon: paperPlaneSharp
+    title: 'Personajes',
+    url: '/personajes',
+    iosIcon: peopleOutline,
+    mdIcon: peopleSharp
   },
   {
-    title: 'Favorites',
-    url: '/folder/Favorites',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp
+    title: 'Momentos',
+    url: '/momentos',
+    iosIcon: filmOutline,
+    mdIcon: filmSharp
   },
   {
-    title: 'Archived',
-    url: '/folder/Archived',
-    iosIcon: archiveOutline,
-    mdIcon: archiveSharp
+    title: 'Acerda de',
+    url: '/acerca',
+    iosIcon: informationCircleOutline,
+    mdIcon: informationCircleSharp
   },
   {
-    title: 'Trash',
-    url: '/folder/Trash',
-    iosIcon: trashOutline,
-    mdIcon: trashSharp
+    title: 'Influencia en mi vida',
+    url: '/vida',
+    iosIcon: imageOutline,
+    mdIcon: imageSharp
   },
   {
-    title: 'Spam',
-    url: '/folder/Spam',
-    iosIcon: warningOutline,
-    mdIcon: warningSharp
+    title: 'Contrátame',
+    url: '/contratame',
+    iosIcon: readerOutline,
+    mdIcon: readerSharp
   }
 ];
-
-const labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
 const Menu: React.FC = () => {
   const location = useLocation();
@@ -69,8 +67,8 @@ const Menu: React.FC = () => {
     <IonMenu contentId="main" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
-          <IonListHeader>Inbox</IonListHeader>
-          <IonNote>hi@ionicframework.com</IonNote>
+          <IonListHeader>One Punch Man</IonListHeader>
+          <IonNote>Mini Wiki</IonNote>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
@@ -81,16 +79,6 @@ const Menu: React.FC = () => {
               </IonMenuToggle>
             );
           })}
-        </IonList>
-
-        <IonList id="labels-list">
-          <IonListHeader>Labels</IonListHeader>
-          {labels.map((label, index) => (
-            <IonItem lines="none" key={index}>
-              <IonIcon aria-hidden="true" slot="start" icon={bookmarkOutline} />
-              <IonLabel>{label}</IonLabel>
-            </IonItem>
-          ))}
         </IonList>
       </IonContent>
     </IonMenu>
