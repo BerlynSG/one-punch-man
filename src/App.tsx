@@ -2,13 +2,15 @@ import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/r
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
-import Page from './pages/Page';
 import Portada from './pages/Page portada';
 import Personajes from './pages/Page personajes';
 import Momentos from './pages/Page momentos';
 import Acerca from './pages/Page acerca de';
 import Vida from './pages/Page mi vida';
 import Contratame from './pages/Page contratame';
+import Saitama from './pages/personajes/Page Saitama';
+import Genos from './pages/personajes/Page Genos';
+import Satoru from './pages/personajes/Page Satoru';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,6 +41,9 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import SvsGenos from './pages/momentos/Page Saitama Genos';
+import SvsBoros from './pages/momentos/Page Saitama Boros';
+import SvsBakuzan from './pages/momentos/Page Saitama Bakuzan';
 
 setupIonicReact();
 
@@ -50,10 +55,7 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/folder/Inbox" />
-            </Route>
-            <Route path="/folder/:name" exact={true}>
-              <Page />
+              <Redirect to="/portada" />
             </Route>
             <Route path="/portada" exact={true}>
               <Portada />
@@ -61,8 +63,26 @@ const App: React.FC = () => {
             <Route path="/personajes" exact={true}>
               <Personajes />
             </Route>
+            <Route path="/personajes/saitama" exact={true}>
+              <Saitama />
+            </Route>
+            <Route path="/personajes/genos" exact={true}>
+              <Genos />
+            </Route>
+            <Route path="/personajes/satoru" exact={true}>
+              <Satoru />
+            </Route>
             <Route path="/momentos" exact={true}>
               <Momentos />
+            </Route>
+            <Route path="/momentos/genos" exact={true}>
+              <SvsGenos />
+            </Route>
+            <Route path="/momentos/boros" exact={true}>
+              <SvsBoros />
+            </Route>
+            <Route path="/momentos/bakuzan" exact={true}>
+              <SvsBakuzan />
             </Route>
             <Route path="/acerca" exact={true}>
               <Acerca />

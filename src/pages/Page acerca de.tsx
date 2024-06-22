@@ -1,5 +1,8 @@
-import { IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonImg, IonMenuButton, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonImg, IonMenuButton, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, A11y } from 'swiper/modules';
+import "swiper/css";
 import './style.css';
 
 const Acerca: React.FC = () => {
@@ -13,18 +16,47 @@ const Acerca: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{name}</IonTitle>
+          <IonTitle>Acerca de ...</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{name}</IonTitle>
+            <IonTitle size="large">Acerca de ...</IonTitle>
           </IonToolbar>
         </IonHeader>
         <div className='titulo-info'>
           <h1>one punch man</h1>
+        </div>
+        <div className='slider-info'>
+          <Swiper
+            modules={[A11y, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+            autoplay={{delay: 5000}}
+          >
+            <SwiperSlide>
+              <IonImg src='src/img/personajes/saitama/1.png'></IonImg>
+            </SwiperSlide>
+            <SwiperSlide>
+              <IonImg src='src/img/momentos/genos vs saitama/1.png'></IonImg>
+            </SwiperSlide>
+            <SwiperSlide>
+              <IonImg src='src/img/personajes/genos/1.png'></IonImg>
+            </SwiperSlide>
+            <SwiperSlide>
+              <IonImg src='src/img/momentos/saitama vs boros/1.png'></IonImg>
+            </SwiperSlide>
+            <SwiperSlide>
+              <IonImg src='src/img/personajes/satoru/1.png'></IonImg>
+            </SwiperSlide>
+            <SwiperSlide>
+              <IonImg src='src/img/momentos/saitama vs bakuzan/1.png'></IonImg>
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div>
           <div>

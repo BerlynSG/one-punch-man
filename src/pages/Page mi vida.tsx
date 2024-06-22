@@ -1,7 +1,6 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
-//import ExploreContainer from '../components/ExploreContainer';
-import './Page mi vida.css';
+import './style.css';
 
 const Vida: React.FC = () => {
 
@@ -14,18 +13,20 @@ const Vida: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{name}</IonTitle>
+          <IonTitle>Influencia en mi vida</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{name}</IonTitle>
+            <IonTitle size="large">Influencia en mi vida</IonTitle>
           </IonToolbar>
         </IonHeader>
-        //Aquí van las cosas
-        
+        <video className='video-vida' controls>
+          <source src="src/img/video2.mp4" type="video/mp4" />
+          Tu navegador no soporta el formato de video.
+        </video>
       </IonContent>
     </IonPage>
   );
