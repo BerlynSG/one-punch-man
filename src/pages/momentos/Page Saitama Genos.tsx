@@ -16,14 +16,14 @@ const SvsGenos: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{name}</IonTitle>
+          <IonTitle>Saitama vs Genos</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{name}</IonTitle>
+            <IonTitle size="large">Saitama vs Genos</IonTitle>
           </IonToolbar>
         </IonHeader>
         <div className='titulo-info'>
@@ -39,16 +39,16 @@ const SvsGenos: React.FC = () => {
             autoplay={{delay: 5000}}
           >
             <SwiperSlide>
-              <IonImg src='src/img/momentos/genos vs saitama/1.png'></IonImg>
+              <IonImg src='./src/img/momentos/genos vs saitama/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/genos vs saitama/2.png'></IonImg>
+              <IonImg src='./src/img/momentos/genos vs saitama/2.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/genos vs saitama/3.png'></IonImg>
+              <IonImg src='./src/img/momentos/genos vs saitama/3.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/genos vs saitama/4.png'></IonImg>
+              <IonImg src='./src/img/momentos/genos vs saitama/4.png'></IonImg>
             </SwiperSlide>
           </Swiper>
         </div>

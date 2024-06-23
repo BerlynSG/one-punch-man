@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonImg, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
 import './style.css';
 
@@ -25,7 +25,7 @@ const Contratame: React.FC = () => {
         </IonHeader>
         <div className='yo'>
           <div className='yo-imagen'>
-            <img src='src/img/yo.png'></img>
+            <img src='./src/img/yo.png'></img>
           </div>
           <h1>Berlyn Sánchez González</h1>
           <small>Software Developer</small>

@@ -16,14 +16,14 @@ const Saitama: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{name}</IonTitle>
+          <IonTitle>Saitama</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{name}</IonTitle>
+            <IonTitle size="large">Saitama</IonTitle>
           </IonToolbar>
         </IonHeader>
         <div className='titulo-info'>
@@ -39,16 +39,16 @@ const Saitama: React.FC = () => {
             autoplay={{delay: 5000}}
           >
             <SwiperSlide>
-              <IonImg src='src/img/personajes/saitama/1.png'></IonImg>
+              <IonImg src='./src/img/personajes/saitama/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/personajes/saitama/2.png'></IonImg>
+              <IonImg src='./src/img/personajes/saitama/2.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/personajes/saitama/3.png'></IonImg>
+              <IonImg src='./src/img/personajes/saitama/3.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/personajes/saitama/4.png'></IonImg>
+              <IonImg src='./src/img/personajes/saitama/4.png'></IonImg>
             </SwiperSlide>
           </Swiper>
         </div>

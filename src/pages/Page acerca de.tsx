@@ -39,22 +39,22 @@ const Acerca: React.FC = () => {
             autoplay={{delay: 5000}}
           >
             <SwiperSlide>
-              <IonImg src='src/img/personajes/saitama/1.png'></IonImg>
+              <IonImg src='./src/img/personajes/saitama/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/genos vs saitama/1.png'></IonImg>
+              <IonImg src='./src/img/momentos/genos vs saitama/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/personajes/genos/1.png'></IonImg>
+              <IonImg src='./src/img/personajes/genos/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/saitama vs boros/1.png'></IonImg>
+              <IonImg src='./src/img/momentos/saitama vs boros/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/personajes/satoru/1.png'></IonImg>
+              <IonImg src='./src/img/personajes/satoru/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/saitama vs bakuzan/1.png'></IonImg>
+              <IonImg src='./src/img/momentos/saitama vs bakuzan/1.png'></IonImg>
             </SwiperSlide>
           </Swiper>
         </div>

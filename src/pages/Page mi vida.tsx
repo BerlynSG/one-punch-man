@@ -24,7 +24,7 @@ const Vida: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <video className='video-vida' controls>
-          <source src="src/img/video2.mp4" type="video/mp4" />
+          <source src="./src/img/video2.mp4" type="video/mp4" />
           Tu navegador no soporta el formato de video.
         </video>
       </IonContent>

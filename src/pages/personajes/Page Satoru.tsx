@@ -16,14 +16,14 @@ const Satoru: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{name}</IonTitle>
+          <IonTitle>Satoru</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{name}</IonTitle>
+            <IonTitle size="large">Satoru</IonTitle>
           </IonToolbar>
         </IonHeader>
         <div className='titulo-info'>
@@ -39,16 +39,16 @@ const Satoru: React.FC = () => {
             autoplay={{delay: 5000}}
           >
             <SwiperSlide>
-              <IonImg src='src/img/personajes/satoru/1.png'></IonImg>
+              <IonImg src='./src/img/personajes/satoru/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/personajes/satoru/2.png'></IonImg>
+              <IonImg src='./src/img/personajes/satoru/2.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/personajes/satoru/3.png'></IonImg>
+              <IonImg src='./src/img/personajes/satoru/3.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/personajes/satoru/4.png'></IonImg>
+              <IonImg src='./src/img/personajes/satoru/4.png'></IonImg>
             </SwiperSlide>
           </Swiper>
         </div>

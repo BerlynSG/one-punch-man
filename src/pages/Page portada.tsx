@@ -14,7 +14,7 @@ const Portada: React.FC = () => {
         <div className='oscuro'></div>
         <div className='portada'>
           <video className='video' loop autoPlay muted>
-            <source src="src/img/video1.mp4" type="video/mp4" />
+            <source src="./src/img/video1.mp4" type="video/mp4" />
             Tu navegador no soporta el formato de video.
           </video>
           <div className='cabezal'>
@@ -35,22 +35,22 @@ const Portada: React.FC = () => {
               autoplay={{delay: 5000}}
             >
               <SwiperSlide>
-                <IonImg src='src/img/personajes/saitama/1.png'></IonImg>
+                <IonImg src='./src/img/personajes/saitama/1.png'></IonImg>
               </SwiperSlide>
               <SwiperSlide>
-                <IonImg src='src/img/momentos/genos vs saitama/1.png'></IonImg>
+                <IonImg src='./src/img/momentos/genos vs saitama/1.png'></IonImg>
               </SwiperSlide>
               <SwiperSlide>
-                <IonImg src='src/img/momentos/saitama vs bakuzan/1.png'></IonImg>
+                <IonImg src='./src/img/momentos/saitama vs bakuzan/1.png'></IonImg>
               </SwiperSlide>
               <SwiperSlide>
-                <IonImg src='src/img/personajes/genos/1.png'></IonImg>
+                <IonImg src='./src/img/personajes/genos/1.png'></IonImg>
               </SwiperSlide>
               <SwiperSlide>
-                <IonImg src='src/img/momentos/saitama vs boros/1.png'></IonImg>
+                <IonImg src='./src/img/momentos/saitama vs boros/1.png'></IonImg>
               </SwiperSlide>
               <SwiperSlide>
-                <IonImg src='src/img/personajes/satoru/1.png'></IonImg>
+                <IonImg src='./src/img/personajes/satoru/1.png'></IonImg>
               </SwiperSlide>
             </Swiper>
           </div>

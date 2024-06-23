@@ -16,14 +16,14 @@ const SvsBakuzan: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>{name}</IonTitle>
+          <IonTitle>Saitama vs Bakuzan</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{name}</IonTitle>
+            <IonTitle size="large">Saitama vs Bakuzan</IonTitle>
           </IonToolbar>
         </IonHeader>
         <div className='titulo-info'>
@@ -39,16 +39,16 @@ const SvsBakuzan: React.FC = () => {
             autoplay={{delay: 5000}}
           >
             <SwiperSlide>
-              <IonImg src='src/img/momentos/saitama vs bakuzan/1.png'></IonImg>
+              <IonImg src='./src/img/momentos/saitama vs bakuzan/1.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/saitama vs bakuzan/2.png'></IonImg>
+              <IonImg src='./src/img/momentos/saitama vs bakuzan/2.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/saitama vs bakuzan/3.png'></IonImg>
+              <IonImg src='./src/img/momentos/saitama vs bakuzan/3.png'></IonImg>
             </SwiperSlide>
             <SwiperSlide>
-              <IonImg src='src/img/momentos/saitama vs bakuzan/4.png'></IonImg>
+              <IonImg src='./src/img/momentos/saitama vs bakuzan/4.png'></IonImg>
             </SwiperSlide>
           </Swiper>
         </div>
